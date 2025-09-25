@@ -10,6 +10,8 @@
   <!-- <script src="./app.js defer"></script> -->
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <script>
     tailwind.config = { darkMode: 'class' }
   </script>
@@ -116,7 +118,7 @@
 
 
   <!-- About Section -->
-  <div class="w-full px-[12%] py-10 scroll-mt-20 mt-8 pt-28" id="about ">
+  <div class="w-full px-[12%] py-3 scroll-mt-10 mt-8 pt-28" id="about ">
     <h4 class="text-center mb-2 mt-3 text-lg ">Introduction</h4>
     <h2 class="text-center text-5xl font-bold">About Me</h2>
 
@@ -148,21 +150,21 @@
 
         <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl cursor-pointer">
           <li
-            class="border border-gray-500 dark:border-gray-300 rounded-3xl p-6 hover:-translate-y-2 duration-700 shadow-[0_4px_50px_rgba(149,0,162,0.15)]">
+            class="border border-gray-500 dark:border-gray-300 rounded-3xl p-6 hover:-translate-y-2 duration-700 shadow-[0_4px_50px_rgba(149,0,162,0.15)] hover:bg-purple-50 dark:hover:bg-gray-800 hover:-translate-y-2 duration-700">
             <img src="./portfolio_images/code-icon.png" alt="" class="w-7 mt-4">
             <h3 class="my-4 font-semibold">Languages</h3>
             <p class="text-sm">HTML, CSS, Bootstrap, Tailwind, JS, React, Next.js</p>
           </li>
 
           <li
-            class="border border-gray-500 dark:border-gray-300 rounded-3xl p-6 hover:-translate-y-2 duration-700 shadow-md">
+            class="border border-gray-500 dark:border-gray-300 rounded-3xl p-6 hover:-translate-y-2 duration-700 shadow-md hover:bg-purple-50 dark:hover:bg-gray-800 hover:-translate-y-2 duration-700">
             <img src="./portfolio_images/edu-icon.png" alt="" class="w-7 mt-4">
             <h3 class="my-4 font-semibold">Education</h3>
             <p class="text-sm">B.Sc. (Information Technology)</p>
           </li>
 
           <li
-            class="border border-gray-500 dark:border-gray-300 rounded-3xl p-6 hover:-translate-y-2 duration-700 shadow-md">
+            class="border border-gray-500 dark:border-gray-300 rounded-3xl p-6 hover:-translate-y-2 duration-700 shadow-md hover:bg-purple-50 dark:hover:bg-gray-800 hover:-translate-y-2 duration-700">
             <img src="./portfolio_images/project-icon.png" alt="" class="w-7 mt-4">
             <h3 class="my-4 font-semibold">Projects</h3>
             <p class="text-sm">More than 10 completed projects</p>
@@ -195,7 +197,7 @@
       </div>
     </div>
   </div>
-
+<!-- services  -->
   <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
     <h4 class="text-center mb-2 text-lg">What We Offer</h4>
     <h2 class="text-center text-5xl font-bold">My Services</h2>
@@ -262,12 +264,12 @@
     </div>
   </div>
 
-
+ <!-- work  -->
   <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
 
     <h4 class="text-center mb-2 text-lg text-gray-800 dark:text-gray-300">My Portfolio</h4>
-    <h2 class="text-center text-5xl text-gray-900 dark:text-white">My Latest Work</h2>
-    <p class="text-center max-w-2xl mx-auto mb-12 mt-6 text-gray-700 dark:text-gray-400">
+    <h2 class="text-center text-5xl text-gray-900 dark:text-white" data-aos="fade-up">My Latest Work</h2>
+    <p class="text-center max-w-2xl mx-auto mb-12 mt-6 text-gray-700 dark:text-gray-400" data-aos="fade-up" data-aos-delay="200">
       Welcome To My Web Development Portfolio! Explore a
       Collection of Projects showcasing my expertise in front-end Developer
     </p>
@@ -276,7 +278,7 @@
     <div class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5">
 
       <div
-        class="aspect-square bg-[url('./portfolio_images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        class="aspect-square bg-[url('./portfolio_images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="600">
         <div
           class="bg-white dark:bg-gray-800 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 shadow-md">
           <div>
@@ -292,7 +294,7 @@
 
 
       <div
-        class="aspect-square bg-[url('./portfolio_images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        class="aspect-square bg-[url('./portfolio_images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="600">
         <div
           class="bg-white dark:bg-gray-800 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 shadow-md">
           <div>
@@ -308,7 +310,7 @@
 
 
       <div
-        class="aspect-square bg-[url('./portfolio_images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        class="aspect-square bg-[url('./portfolio_images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="600">
         <div
           class="bg-white dark:bg-gray-800 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 shadow-md">
           <div>
@@ -323,7 +325,7 @@
       </div>
 
       <div
-        class="aspect-square bg-[url('./portfolio_images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        class="aspect-square bg-[url('./portfolio_images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="600">
         <div
           class="bg-white dark:bg-gray-800 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 shadow-md">
           <div>
@@ -340,7 +342,7 @@
 
 
     <a href="#"
-      class="w-max flex items-center justify-center gap-3 text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-700 dark:border-gray-300 rounded-full py-4 px-11 mx-auto my- transition">
+      class="w-max flex items-center justify-center gap-3 text-gray-800 dark:text-white bg-white dark:bg-gray-800 border border-gray-700 dark:border-gray-300 rounded-full py-4 px-11 mx-auto my- transition" data-aos="zoom-in">
       Read More
       <img src="./portfolio_images/right-arrow-bold.png" alt="" class="w-5">
     </a>
@@ -350,7 +352,7 @@
 
   <!-- Contact Section -->
   <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-[length:90px_auto] 
-            bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+            bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100"data-aos="fade-up" data-aos-delay="100">
 
     <h4 class="text-center mb-auto text-lg text-purple-500 dark:text-purple-400">Contact With Me </h4>
     <h2 class="text-center text-5xl font-bold">Get In Touch</h2>
@@ -379,7 +381,7 @@
 
       <button class="py-3 px-8 mt-10 w-max flex items-center justify-between gap-2 
              bg-black text-white rounded-full mx-auto 
-             hover:bg-gray-800 dark:bg-purple-600 dark:hover:bg-purple-700 
+             hover:bg-gray-800 dark:bg-purple-600 dark:hover:bg-purple-800 
              cursor-pointer duration-500">
         Submit Now
         <img src="./portfolio_images/right-arrow-white.png" alt="" class="w-4">
@@ -390,7 +392,7 @@
   </div>
   <!-- Footer  -->
   <div id="footer" class="w-full px-[12%] py-10 scroll-mt-20 bg-no-repeat bg-[length:90px_auto]">
-    <h4 class="text-center mb-auto text-lg">Stay Connected</h4>
+    <h4 class="text-center mb-auto text-lg">Stay Connected With Me</h4>
     <h2 class="text-center text-5xl">Follow Me</h2>
     <p class="text-center max-w-2xl mx-auto mb-12 mt-6">
       Thank you for visiting my portfolio. Stay connected through my social platforms and let’s build something creative
@@ -399,7 +401,7 @@
 
 
     <div class="flex items-center justify-center gap-6 mt-8">
-      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
       <a href="#"><i class="bi bi-twitter"></i></a>
       <a href="#"><i class="bi bi-linkedin"></i></a>
       <a href="#"><i class="bi bi-github"></i></a>
@@ -450,9 +452,17 @@
       themeIcon.classList.add("bi-brightness-low-fill");
     }
 
+    
+
   </script>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: false      
+  });
+</script>
 </body>
 
 </html>
